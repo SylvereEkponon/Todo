@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!--custom CSS-->
+  <link rel="stylesheet" href="main.css">
+  <title>ToDo App</title>
+</head>
+<body>
+  <div class="container">
+    
+    <h3 class="text-uppercase mb-4">todo app</h3>
+    <!--todo feedback-->
+    <div class="todo-feedback alert alert-danger text-capitalize">todo feedback</div>
+
+    <form id="todo-form">
+      <div class="form-row">
+        <div class="col-7 col-md-10">
+          <input type="text" class="form-control" id="todo-input" placeholder="Task">
+        </div>
+        <div class="col col-md-2">
+          <button type="submit" class="btn btn-outline-primary mb-2" id="todo-submit">Add Task</button>
+        </div>
+      </div>
+    </form>
+    <h3 class="text-uppercase my-4">ToDo List</h3>
+    <ul class="list-unstyled todo-list" id="todo-list">
+
+    </ul>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
